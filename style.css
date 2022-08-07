@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+}
+
+.burger-menu {
+    position: relative;
+    margin: 50px auto;
+    /* background: #05f; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.burger-menu span {
+    position: absolute;
+    background: white;
+    height: 4px;
+    width: 100%;
+    transition: all ease .3s;
+    left: 0;
+    border-radius: 4px;
+}
+.burger-menu span:nth-child(1) {
+    top: 0;
+
+}
+.burger-menu span:nth-child(2) {
+    top: 13px;
+}
+.burger-menu span:nth-child(3) {
+    top: 26px;
+}
+
+/* ? HOVER  */
+
+.burger-menu:hover span:nth-child(1) {
+    top: 13px;
+    transform: rotate(-45deg);
+}
+.burger-menu:hover span:nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.burger-menu:hover span:nth-child(3) {
+    top: 13px;
+    transform: rotate(45deg);
+    
+}
