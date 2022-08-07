@@ -11,7 +11,6 @@ body {
 .burger-menu {
     position: relative;
     margin: 50px auto;
-    /* background: #05f; */
     width: 30px;
     height: 30px;
     cursor: pointer;
